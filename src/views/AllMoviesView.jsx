@@ -7,7 +7,7 @@ function AllMoviesView() {
   const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
-  const [totalResults, setTotalResults] = useState(0); // Track total number of results
+  const [totalResults, setTotalResults] = useState(0); 
   const moviesPerPage = 20;
   const navigate = useNavigate();
 
@@ -17,8 +17,8 @@ function AllMoviesView() {
         `https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_TMDB_KEY}&page=${currentPage}`
       );
       setMovies(response.data.results);
-      setTotalResults(response.data.total_results); // Set total results from the API response
-      setTotalPages(Math.ceil(response.data.total_results / moviesPerPage)); // Calculate total pages
+      setTotalResults(response.data.total_results);
+      setTotalPages(Math.ceil(response.data.total_results / moviesPerPage)); 
     })();
   }, [currentPage]);
 

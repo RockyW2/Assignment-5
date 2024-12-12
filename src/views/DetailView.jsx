@@ -56,7 +56,7 @@ function DetailView() {
         <p><strong>Production Companies:</strong> {getCompanies()}</p>
         <p><strong>Description:</strong> {movDetails.overview}</p>
       </div>
-  
+
       <div className="poster-container">
         <img
           className="movie-poster"
@@ -64,7 +64,7 @@ function DetailView() {
           alt={movDetails.original_title}
         />
       </div>
-  
+
       <div className="trailers-section">
         <h2>Trailers</h2>
         <div className="trailers-grid">
@@ -76,5 +76,5 @@ function DetailView() {
     </div>
   );
 }
-  
+
 export default DetailView;

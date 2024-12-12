@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function Genres(props) {
   const navigate = useNavigate();
+  
   const genreClick = (id) => {
     navigate(`/movies/genre/${id}`);
   }

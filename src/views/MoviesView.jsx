@@ -33,7 +33,7 @@ function MoviesView() {
                     <div className="genres-list">
                         <Genres genresList={genres} />
                     </div>
-                    
+
                 </div>
                 <div className="outlet">
                     <Outlet />
